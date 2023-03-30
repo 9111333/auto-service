@@ -1,0 +1,19 @@
+.container .row .col{
+    margin-top: 2rem;
+}
+.container {
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 767px) {
+
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    .container .row{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
