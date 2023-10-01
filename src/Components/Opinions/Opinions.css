@@ -1,0 +1,40 @@
+.op-mainbox{
+    width: 15rem;
+    height: 30rem;
+    border: 1px solid #eeeeee;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.08);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    transition: all 0.2s ease; 
+    margin: 0 auto;
+}
+.op-mainbox .op-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.op-mainbox .op-icon .op-iconn{
+    font-size: 4rem;
+    color: var(--orange);
+}
+.op-mainbox .op-content{
+    padding: 1rem;
+    text-align: justify;
+    font-style: oblique;
+    font-weight: bold;
+}
+.op-mainbox .op-name{
+    padding: 1rem;
+    text-align: left;
+    font-style: oblique;
+    font-weight: bold;
+}
+.op-mainbox:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+
+.op-mainbox .op-starr{
+    color: var(--orange);
+}

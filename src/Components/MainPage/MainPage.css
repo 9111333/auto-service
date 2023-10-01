@@ -1,0 +1,97 @@
+
+.header-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2rem;
+}
+.header-pic img{
+    width: 100%;
+}
+
+.mainbody {
+    margin-top: 2rem;
+}
+
+.mainbody span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0.8rem;
+
+}
+.mainbody span h4{
+    color: var(--orange);
+}
+
+.mainbody p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+@keyframes car-position {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(15rem);
+    }
+}
+
+.mainbody .car-roof {
+    display: flex;
+    justify-content: center;
+    animation-name: car-position;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+.opinions-main-title , .mainpage-brands{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.opinions-main-title .opinions-main-title-span h2 , .mainpage-brands .mainpage-brands-title h2{
+    font-weight: bolder;
+}
+.opinions{
+    margin-top: 7rem;
+    margin-bottom: 6rem;
+}
+.mainpage-brands{
+    margin-bottom: 5rem;
+}
+.brands-pics{
+  background-color: #000;
+  overflow: hidden; 
+}
+.brands-pics img{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    overflow: hidden; 
+}
+
+@media screen and (max-width: 767px) {
+    .colide-prevent{
+        margin-top: 18rem !important;
+    }
+    .opinions .op-container .op-margin{
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 991px) {
+
+    .opinions .op-container {
+        display: flex;
+        justify-content: center;
+    }
+    .opinions .op-container .op-row{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
